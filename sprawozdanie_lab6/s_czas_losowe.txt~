@@ -1,0 +1,10 @@
+set terminal png
+set output 'czas_losowe.png'
+set title "czas wykonywania algorytmu quick-sort dla liczb losowych"
+set xlabel "il. danych [mln]"
+set ylabel "czas [s]"
+set grid
+
+plot 'quick_losowe_0,5.txt' using 1 : 2 smooth bezier, 'quick_losowe_losowo.txt' using 1 : 2 smooth bezier, 
+
+unset output

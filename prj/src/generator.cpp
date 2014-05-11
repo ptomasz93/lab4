@@ -18,13 +18,13 @@ using namespace std;
 
 void generuj(char* nazwa,int rozmiar)
 {
-	srand( time( NULL ) );
+
 	ofstream test;
 	test.open(nazwa);
 	test<<rozmiar<<"\n";
 	for(int i=0; i<rozmiar; i++)
 	{
-		test<<(rand()%100)<<"\n";
+		test<<(rand()%rozmiar+1)<<"\n";
 	}
 	test.close();
 }

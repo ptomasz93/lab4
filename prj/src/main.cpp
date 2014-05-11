@@ -5,7 +5,7 @@
  *      Author: root
  */
 
-#define  SREDNIA_Z 5
+#define  SREDNIA_Z 3
 
 #include <iostream>
 #include "funkcje.hh"
@@ -25,30 +25,60 @@ fstream wynik;
 
 int main()
 {
+srand( time( NULL ) );
 dane wejsciowe;
 fstream losowe, posortowane;
 ofstream wynik;
+
 czas stoper;
-int il=0, sr;
+int il=100, sr;
 double suma;
 
-wynik.open("pos_los");
-for(int b=0;b<15;b++)
+wynik.open("qucik_losowe_piwot_srodkowy.txt");
+for(int b=0;b<6;b++)
 	{
-	il+=100000;
+	il*=10;
+	generuj("losowe.txt",il);
+		for(sr=0;sr<SREDNIA_Z;sr++)
+		{
+			losowe.open("losowe.txt");
+			losowe>>wejsciowe;
+			losowe.close();
+			stoper.start();
+			quick(wejsciowe,0,il);
+			stoper.stop();
+//			cout<<wejsciowe;
+			suma+=stoper.wynik();
+
+			wejsciowe.wejsciowe.clear();
+		}
+		cout<<"srednia dla: "<<wejsciowe.rozmiar<<"  "<<suma/sr<<"\n";
+		wynik<<wejsciowe.rozmiar<<"  "<<suma/sr<<"\n";
+		suma=0;
+	}
+wynik.close();
+
+il=100;
+
+wynik.open("qucik_posortowane_piwot_srodkowy.txt");
+for(int b=0;b<6;b++)
+	{
+	il*=10;
 	generuj("losowe.txt",il);
 	losowe.open("losowe.txt");
 	losowe>>wejsciowe;
+
 	losowe.close();
 	quick(wejsciowe,0,il);
-		for(sr=0;sr<SREDNIA_Z;sr++)
+	//wejsciowe.odwroc();
+
+	for(sr=0;sr<SREDNIA_Z;sr++)
 		{
 			stoper.start();
 			quick(wejsciowe,0,il);
 			stoper.stop();
+			wejsciowe.odwroc();
 			suma+=stoper.wynik();
-			wejsciowe.wejsciowe.clear();
-
 		}
 
 		cout<<"srednia dla: "<<wejsciowe.rozmiar<<"  "<<suma/sr<<"\n";
@@ -58,7 +88,6 @@ for(int b=0;b<15;b++)
 	}
 
 wynik.close();
-
  }
 
 

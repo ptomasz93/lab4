@@ -184,7 +184,7 @@ il[mln] & czas pół [s] & czas losowo \\
 
 
 Wnioski \newline
-Zaskakujaca jest zmiana wynikow pomiarow. Z pomiarow przeprowadzony w zeszlym tygodniu zloznosc obliczeniowa dla algorytmu wychodzila liniowa. Z pomiarow teraz dokonanych zlozonosc obliczeniowa wychodzi wykladnicza. Mozliwe ze wpływ na wyniki mają jakieś czynniki związane z systemem operacyjnym. Z pomiarow mozna wywnioskowac zę dla danych o rozmiarze mniejszym niz 5 mln elementow różnice czasowe wykonywania algorytmow sa znikome w porownaiu z czasem sortowania.
+Z pomiarow dokonanych wynika zlozonosc obliczeniowa wykladnicza. Mozliwe ze wpływ na wyniki mają jakieś czynniki związane z systemem operacyjnym, lub błąd w implementacji algorytmu. Z pomiarow mozna wywnioskowac zę dla danych o rozmiarze mniejszym niz 5 mln elementow, różnice czasowe wykonywania algorytmow sa znikome w porownaiu z czasem sortowania.
 \end{center}
 \end{figure}
 

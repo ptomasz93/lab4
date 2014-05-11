@@ -23,9 +23,11 @@ using namespace std;
 void quick(dane &plik ,int lewy, int prawy)
 {
   int i,j,srodek;
-  srand( time( NULL ) );
-  i=(rand()%(prawy-lewy+1)+lewy);
-  //i = (lewy + prawy) / 2;
+
+
+ // i=(rand()%(prawy-lewy+1)+lewy);
+  i = (lewy + prawy) / 2;
+  //i=prawy-1;
   srodek = plik.wejsciowe[i];
   plik.Zamien_elementy(prawy, i);
   for(j = i = lewy; i < prawy; i++)
