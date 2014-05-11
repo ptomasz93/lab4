@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Sortowanie: Plik źródłowy funkcje.cpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Sortowanie
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('funkcje_8cpp.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">funkcje.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="funkcje_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
+<a name="l00002"></a>00002 <span class="comment"> * funkcje.cpp</span>
+<a name="l00003"></a>00003 <span class="comment"> *</span>
+<a name="l00004"></a>00004 <span class="comment"> *  Created on: 01-03-2014</span>
+<a name="l00005"></a>00005 <span class="comment"> *      Author: Tomasz Piotroswki</span>
+<a name="l00006"></a>00006 <span class="comment"> */</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="funkcje_8hh.html">funkcje.hh</a>&quot;</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="keyword">using namespace </span>std;
+<a name="l00011"></a>00011 
+<a name="l00018"></a><a class="code" href="funkcje_8hh.html#ab80d311fc13e71453f3080482634447e">00018</a> <span class="keywordtype">bool</span> <a class="code" href="funkcje_8cpp.html#ab80d311fc13e71453f3080482634447e" title="otwiera plik o zadajnej nazwie">otworz</a>(<span class="keywordtype">char</span>* nazwa,fstream &amp;plik)
+<a name="l00019"></a>00019 {
+<a name="l00020"></a>00020         plik.open(nazwa,<a class="code" href="main_8cpp.html#a689b27a44e1598a3ce71d53c8000f64a">ios::in</a>);
+<a name="l00021"></a>00021         <span class="keywordflow">return</span> plik.good();
+<a name="l00022"></a>00022 }
+<a name="l00023"></a>00023 
+<a name="l00032"></a><a class="code" href="funkcje_8hh.html#a1cddff5e49afc682449b3bda713006f5">00032</a> <span class="keywordtype">int</span> <a class="code" href="funkcje_8cpp.html#a1cddff5e49afc682449b3bda713006f5" title="kopiuje dane z pliku do wektora">kopiuj</a>(vector &lt;int&gt; &amp;wejsciowe, fstream &amp;plik)
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034 {
+<a name="l00035"></a>00035 <span class="keywordtype">int</span> wiersz, rozmiar;
+<a name="l00036"></a>00036 plik&gt;&gt;rozmiar;
+<a name="l00037"></a>00037 <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;rozmiar;i++)
+<a name="l00038"></a>00038         {
+<a name="l00039"></a>00039         plik&gt;&gt;wiersz;
+<a name="l00040"></a>00040         wejsciowe.push_back(wiersz);
+<a name="l00041"></a>00041         }
+<a name="l00042"></a>00042 <span class="keywordflow">return</span> rozmiar;
+<a name="l00043"></a>00043 }
+<a name="l00054"></a><a class="code" href="funkcje_8hh.html#ad9ebe61e239dee170b242bda4db9ea63">00054</a> <span class="keywordtype">double</span> <a class="code" href="funkcje_8cpp.html#ad9ebe61e239dee170b242bda4db9ea63" title="implementacja pomiatu czasu oraz algorytmu mnozenia">obliczenia</a>(<span class="keyword">const</span> vector &lt;int&gt; &amp;wejsciowe,<span class="keywordtype">int</span>* wyjsciowe,<span class="keywordtype">int</span> powt)
+<a name="l00055"></a>00055 {
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057         <span class="keywordtype">double</span> time;
+<a name="l00058"></a>00058         <span class="keywordtype">double</span> czasy[3];
+<a name="l00059"></a>00059         clock_t start=0,stop=0;
+<a name="l00060"></a>00060         cout.setf(ios::fixed);
+<a name="l00061"></a>00061         cout.precision(5);
+<a name="l00062"></a>00062                 <span class="keywordflow">for</span>(<span class="keywordtype">int</span> sr=0;sr&lt;5;sr++)
+<a name="l00063"></a>00063                 {
+<a name="l00064"></a>00064                         start=clock();
+<a name="l00065"></a>00065                                 <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;powt;i++)
+<a name="l00066"></a>00066                                 {
+<a name="l00067"></a>00067                                         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> b=0;b&lt;(int)wejsciowe.size();b++)
+<a name="l00068"></a>00068                                         {
+<a name="l00069"></a>00069                                         wyjsciowe[b]=2*wejsciowe[b];
+<a name="l00070"></a>00070                                         }
+<a name="l00071"></a>00071                                 }
+<a name="l00072"></a>00072                         stop=clock();
+<a name="l00073"></a>00073                         time=(double)(stop-start)/(double)<a class="code" href="funkcje_8hh.html#a3d9fc3c745d0880902fe3ea3d5d5f71e">CLOCKS_PER_SEC</a>;
+<a name="l00074"></a>00074                         czasy[sr]=time;
+<a name="l00075"></a>00075                 }
+<a name="l00076"></a>00076         time=(czasy[0]+czasy[1]+czasy[2]+czasy[3]+czasy[4])/5;
+<a name="l00077"></a>00077         <span class="keywordflow">return</span> time;
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079 }
+<a name="l00087"></a><a class="code" href="funkcje_8hh.html#aaa6c62fc60fb1173b904269379d69754">00087</a> <span class="keywordtype">void</span> <a class="code" href="funkcje_8cpp.html#aaa6c62fc60fb1173b904269379d69754" title="funkcja kopiuje zawartosc tablicy wynikow do pliku">zapisz</a>(<span class="keywordtype">int</span>* tablica, fstream &amp;plik, <span class="keywordtype">int</span> rozmiar)
+<a name="l00088"></a>00088 {
+<a name="l00089"></a>00089         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;rozmiar;i++)
+<a name="l00090"></a>00090         {
+<a name="l00091"></a>00091                 plik&lt;&lt;tablica[i]&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;;
+<a name="l00092"></a>00092         }
+<a name="l00093"></a>00093 }
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Przyjaciele</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Definicje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="funkcje_8cpp.html">funkcje.cpp</a>      </li>
+
+    <li class="footer">Wygenerowano Sun Mar 23 2014 23:23:16 dla Sortowanie programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

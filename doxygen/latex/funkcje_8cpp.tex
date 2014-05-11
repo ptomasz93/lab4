@@ -1,0 +1,133 @@
+\hypertarget{funkcje_8cpp}{\section{\-Dokumentacja pliku funkcje.\-cpp}
+\label{funkcje_8cpp}\index{funkcje.\-cpp@{funkcje.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}funkcje.\-hh\char`\"{}}\*
+\-Wykres zależności załączania dla funkcje.\-cpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{funkcje_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{funkcje_8cpp_ab80d311fc13e71453f3080482634447e}{otworz} (char $\ast$nazwa, fstream \&plik)
+\begin{DoxyCompactList}\small\item\em otwiera plik o zadajnej nazwie \end{DoxyCompactList}\item 
+int \hyperlink{funkcje_8cpp_a1cddff5e49afc682449b3bda713006f5}{kopiuj} (vector$<$ int $>$ \&wejsciowe, fstream \&plik)
+\begin{DoxyCompactList}\small\item\em kopiuje dane z pliku do wektora \end{DoxyCompactList}\item 
+double \hyperlink{funkcje_8cpp_ad9ebe61e239dee170b242bda4db9ea63}{obliczenia} (const vector$<$ int $>$ \&wejsciowe, int $\ast$wyjsciowe, int powt)
+\begin{DoxyCompactList}\small\item\em implementacja pomiatu czasu oraz algorytmu mnozenia \end{DoxyCompactList}\item 
+void \hyperlink{funkcje_8cpp_aaa6c62fc60fb1173b904269379d69754}{zapisz} (int $\ast$tablica, fstream \&plik, int rozmiar)
+\begin{DoxyCompactList}\small\item\em funkcja kopiuje zawartosc tablicy wynikow do pliku \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Dokumentacja funkcji}
+\hypertarget{funkcje_8cpp_a1cddff5e49afc682449b3bda713006f5}{\index{funkcje.\-cpp@{funkcje.\-cpp}!kopiuj@{kopiuj}}
+\index{kopiuj@{kopiuj}!funkcje.cpp@{funkcje.\-cpp}}
+\subsubsection[{kopiuj}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf kopiuj} (
+\begin{DoxyParamCaption}
+\item[{vector$<$ int $>$ \&}]{wejsciowe, }
+\item[{fstream \&}]{plik}
+\end{DoxyParamCaption}
+)}}\label{funkcje_8cpp_a1cddff5e49afc682449b3bda713006f5}
+
+
+kopiuje dane z pliku do wektora 
+
+\-Funkcja pobiera wiersz danych z strumienia wejsciwego i zapisuje go w postaci zmiennej int do wektora 
+\begin{DoxyParams}{\-Parametry}
+{\em wejsciowe} & referencja wekstora przechowywujacego dane wejsciowe \\
+\hline
+{\em plik} & strumien wejscia zachaczony na pliku z danymi wejsciowymi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Zwraca}
+zwraca rozmiar tablic 
+\end{DoxyReturn}
+
+
+\-Definicja w linii 32 pliku funkcje.\-cpp.
+
+\hypertarget{funkcje_8cpp_ad9ebe61e239dee170b242bda4db9ea63}{\index{funkcje.\-cpp@{funkcje.\-cpp}!obliczenia@{obliczenia}}
+\index{obliczenia@{obliczenia}!funkcje.cpp@{funkcje.\-cpp}}
+\subsubsection[{obliczenia}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf obliczenia} (
+\begin{DoxyParamCaption}
+\item[{const vector$<$ int $>$ \&}]{wejsciowe, }
+\item[{int $\ast$}]{wyjsciowe, }
+\item[{int}]{powt}
+\end{DoxyParamCaption}
+)}}\label{funkcje_8cpp_ad9ebe61e239dee170b242bda4db9ea63}
+
+
+implementacja pomiatu czasu oraz algorytmu mnozenia 
+
+w fuknkcji zostaje zmierzona ilość taktów procesora potrzebnych na wykonanie
+
+zadanej ilości opercji mnożenia. \-Następnie ilość taktów zostaje podzielona przez
+
+stała \-P\-E\-R\-\_\-\-T\-O\-\_\-\-S\-E\-C 
+\begin{DoxyParams}{\-Parametry}
+{\em wejsciowe} & dane ktore przetworzy algorytm \\
+\hline
+{\em wyjsciowe} & tablica wynikow mnozenia \\
+\hline
+{\em powt} & liczba powtorzen algorytmu \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 54 pliku funkcje.\-cpp.
+
+\hypertarget{funkcje_8cpp_ab80d311fc13e71453f3080482634447e}{\index{funkcje.\-cpp@{funkcje.\-cpp}!otworz@{otworz}}
+\index{otworz@{otworz}!funkcje.cpp@{funkcje.\-cpp}}
+\subsubsection[{otworz}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf otworz} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nazwa, }
+\item[{fstream \&}]{plik}
+\end{DoxyParamCaption}
+)}}\label{funkcje_8cpp_ab80d311fc13e71453f3080482634447e}
+
+
+otwiera plik o zadajnej nazwie 
+
+
+\begin{DoxyParams}{\-Parametry}
+{\em nazwa} & sciezka do pliku \\
+\hline
+{\em plik} & uchwyt do pliku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Zwraca}
+
+\end{DoxyReturn}
+
+
+\-Definicja w linii 18 pliku funkcje.\-cpp.
+
+\hypertarget{funkcje_8cpp_aaa6c62fc60fb1173b904269379d69754}{\index{funkcje.\-cpp@{funkcje.\-cpp}!zapisz@{zapisz}}
+\index{zapisz@{zapisz}!funkcje.cpp@{funkcje.\-cpp}}
+\subsubsection[{zapisz}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf zapisz} (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{tablica, }
+\item[{fstream \&}]{plik, }
+\item[{int}]{rozmiar}
+\end{DoxyParamCaption}
+)}}\label{funkcje_8cpp_aaa6c62fc60fb1173b904269379d69754}
+
+
+funkcja kopiuje zawartosc tablicy wynikow do pliku 
+
+
+\begin{DoxyParams}{\-Parametry}
+{\em tablica} & \\
+\hline
+{\em plik} & \\
+\hline
+{\em rozmiar} & \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 87 pliku funkcje.\-cpp.
+

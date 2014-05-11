@@ -1,0 +1,95 @@
+\documentclass[a4paper]{book}
+\usepackage{makeidx}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage[T1]{fontenc}
+
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{sectsty}
+\usepackage[titles]{tocloft}
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=8,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\familydefault}{\sfdefault}
+\hfuzz=15pt
+\setlength{\emergencystretch}{15pt}
+\hbadness=750
+\tolerance=750
+\begin{document}
+\hypersetup{pageanchor=false,citecolor=blue}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large \-Sortowanie }\\
+\vspace*{1cm}
+{\large \-Wygenerowano przez Doxygen 1.7.6.1}\\
+\vspace*{0.5cm}
+{\small Sun Mar 23 2014 23:23:16}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true,citecolor=blue}
+\chapter{\-Struktura katalogów}
+\input{dirs}
+\chapter{\-Indeks klas}
+\input{annotated}
+\chapter{\-Indeks plików}
+\input{files}
+\chapter{\-Dokumentacja katalogów}
+\input{dir_7cbe5d391e6e770789076a5282468f8c}
+\input{dir_8a95aa72705647e73a00f13561845afa}
+\chapter{\-Dokumentacja klas}
+\input{classczas}
+\input{classdane}
+\chapter{\-Dokumentacja plików}
+\input{clasa_8cpp}
+\input{clasa_8hh}
+\input{funkcje_8cpp}
+\input{funkcje_8hh}
+\input{generator_8cpp}
+\input{generator_8hh}
+\input{heap_8cpp}
+\input{heap_8hh}
+\input{main_8cpp}
+\input{merge_8cpp}
+\input{merge_8hh}
+\input{quick_8cpp}
+\input{quick_8hh}
+\input{stoper_8hh}
+\printindex
+\end{document}

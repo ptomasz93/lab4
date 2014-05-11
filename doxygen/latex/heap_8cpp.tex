@@ -1,0 +1,199 @@
+\hypertarget{heap_8cpp}{\section{\-Dokumentacja pliku heap.\-cpp}
+\label{heap_8cpp}\index{heap.\-cpp@{heap.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}heap.\-hh\char`\"{}}\*
+\-Wykres zależności załączania dla heap.\-cpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{heap_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{heap_8cpp_aaa3956ba23a7ef4819511e8f9726bbb9}{sasiedzi} (int pozycja, int $\ast$wyzej, int $\ast$lewy, int $\ast$prawy)
+\begin{DoxyCompactList}\small\item\em funkcja oblicza indeksy galezi wezla. \end{DoxyCompactList}\item 
+void \hyperlink{heap_8cpp_a57ca91ed761880e713ce3321d51b9ca3}{heap} (\hyperlink{classdane}{dane} \&zbior, int rozmiar)
+\begin{DoxyCompactList}\small\item\em porzadkuje kopiec \end{DoxyCompactList}\item 
+void \hyperlink{heap_8cpp_af0e033b3011366bedae3722020bac21a}{wez} (\hyperlink{classdane}{dane} \&zbior, int \&rozmiar)
+\begin{DoxyCompactList}\small\item\em przeklada najstarszy wezel (najwieksza wartosc) na koniec wektora \end{DoxyCompactList}\item 
+void \hyperlink{heap_8cpp_aa5d4073154327bd623b36d1070aa2827}{heap\-\_\-sort} (\hyperlink{classdane}{dane} \&zbior)
+\begin{DoxyCompactList}\small\item\em wywoluje w petli funkcje budujaca kopiec oraz sciagajaca najwieksza wartosc \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Dokumentacja funkcji}
+\hypertarget{heap_8cpp_a57ca91ed761880e713ce3321d51b9ca3}{\index{heap.\-cpp@{heap.\-cpp}!heap@{heap}}
+\index{heap@{heap}!heap.cpp@{heap.\-cpp}}
+\subsubsection[{heap}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf heap} (
+\begin{DoxyParamCaption}
+\item[{{\bf dane} \&}]{zbior, }
+\item[{int}]{rozmiar}
+\end{DoxyParamCaption}
+)}}\label{heap_8cpp_a57ca91ed761880e713ce3321d51b9ca3}
+
+
+porzadkuje kopiec 
+
+funkcja przeglada kopiec od dolnego rzedu wezlow w gore. \-Po przez operacje porownania wypycha wieksze elemnty w gore kopca. 
+\begin{DoxyParams}{\-Parametry}
+{\em zbior} & zbior elementow do posortowania \\
+\hline
+{\em rozmiar} & rozmiar problemu \\
+\hline
+\end{DoxyParams}
+przegladamy wezly a nie liscie
+
+wezly sa indekowane od 1 
+
+\-Definicja w linii 32 pliku heap.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{heap_8cpp_a57ca91ed761880e713ce3321d51b9ca3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{heap_8cpp_a57ca91ed761880e713ce3321d51b9ca3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{heap_8cpp_aa5d4073154327bd623b36d1070aa2827}{\index{heap.\-cpp@{heap.\-cpp}!heap\-\_\-sort@{heap\-\_\-sort}}
+\index{heap\-\_\-sort@{heap\-\_\-sort}!heap.cpp@{heap.\-cpp}}
+\subsubsection[{heap\-\_\-sort}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf heap\-\_\-sort} (
+\begin{DoxyParamCaption}
+\item[{{\bf dane} \&}]{zbior}
+\end{DoxyParamCaption}
+)}}\label{heap_8cpp_aa5d4073154327bd623b36d1070aa2827}
+
+
+wywoluje w petli funkcje budujaca kopiec oraz sciagajaca najwieksza wartosc 
+
+
+\begin{DoxyParams}{\-Parametry}
+{\em zbior} & \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 62 pliku heap.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{heap_8cpp_aa5d4073154327bd623b36d1070aa2827_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{heap_8cpp_aa5d4073154327bd623b36d1070aa2827_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{heap_8cpp_aaa3956ba23a7ef4819511e8f9726bbb9}{\index{heap.\-cpp@{heap.\-cpp}!sasiedzi@{sasiedzi}}
+\index{sasiedzi@{sasiedzi}!heap.cpp@{heap.\-cpp}}
+\subsubsection[{sasiedzi}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf sasiedzi} (
+\begin{DoxyParamCaption}
+\item[{int}]{pozycja, }
+\item[{int $\ast$}]{wyzej, }
+\item[{int $\ast$}]{lewy, }
+\item[{int $\ast$}]{prawy}
+\end{DoxyParamCaption}
+)}}\label{heap_8cpp_aaa3956ba23a7ef4819511e8f9726bbb9}
+
+
+funkcja oblicza indeksy galezi wezla. 
+
+wezly sa indeksowane od 1 wiec w oniesieniu do wektora trzeba odjac 1. 
+\begin{DoxyParams}{\-Parametry}
+{\em pozycja} & bierzacy wezele \\
+\hline
+{\em wyzej} & wezel mlodszy \\
+\hline
+{\em lewy} & wezel starszy \\
+\hline
+{\em prawy} & wezel starszy \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 19 pliku heap.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{heap_8cpp_aaa3956ba23a7ef4819511e8f9726bbb9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{heap_8cpp_af0e033b3011366bedae3722020bac21a}{\index{heap.\-cpp@{heap.\-cpp}!wez@{wez}}
+\index{wez@{wez}!heap.cpp@{heap.\-cpp}}
+\subsubsection[{wez}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf wez} (
+\begin{DoxyParamCaption}
+\item[{{\bf dane} \&}]{zbior, }
+\item[{int \&}]{rozmiar}
+\end{DoxyParamCaption}
+)}}\label{heap_8cpp_af0e033b3011366bedae3722020bac21a}
+
+
+przeklada najstarszy wezel (najwieksza wartosc) na koniec wektora 
+
+
+\begin{DoxyParams}{\-Parametry}
+{\em zbior} & dane do upozadkowania \\
+\hline
+{\em rozmiar} & problemu \\
+\hline
+\end{DoxyParams}
+znowu te indeksy 
+
+\-Definicja w linii 52 pliku heap.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{heap_8cpp_af0e033b3011366bedae3722020bac21a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{heap_8cpp_af0e033b3011366bedae3722020bac21a_icgraph}
+\end{center}
+\end{figure}
+
+

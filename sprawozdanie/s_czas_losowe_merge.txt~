@@ -1,0 +1,9 @@
+set terminal png
+set output 'czas_losowe_merge.png'
+set title "czas wykonywania algorytmu heap-sort dla liczb ulozonych losowo"
+set xlabel "il. danych"
+set ylabel "czas [s]"
+
+set grid
+plot 'czas_losowe_merge.txt' using 1 : 2 smooth bezier
+unset output

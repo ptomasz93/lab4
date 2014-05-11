@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$generator_8cpp.html#a8a338f908bb9996d5b01aab4439e8a56" title="generuje plik *.txt o zadanej ilosci danych i nazwie" alt="" coords="119,5,183,35"/>
+<area shape="rect" id="node5" href="$heap_8cpp.html#aa5d4073154327bd623b36d1070aa2827" title="wywoluje w petli funkcje budujaca kopiec oraz sciagajaca najwieksza wartosc" alt="" coords="112,59,189,88"/>
+<area shape="rect" id="node16" href="$classczas.html#a1e4c793526806f459e7f5c8c4a3ae29f" title="start pomiaru zapisuje stan zegara" alt="" coords="109,112,192,141"/>
+<area shape="rect" id="node18" href="$classczas.html#a27f391e3c6bfb1f15f97c61bf403eb2d" title="koniec pomiaru zapisuje stan zegara" alt="" coords="109,165,192,195"/>
+<area shape="rect" id="node20" href="$classczas.html#a253df7797ca3cc3447d24c3c9477768e" title="zwraca wynik pomiaru" alt="" coords="105,219,196,248"/>
+<area shape="rect" id="node7" href="$heap_8cpp.html#a57ca91ed761880e713ce3321d51b9ca3" title="porzadkuje kopiec" alt="" coords="245,32,296,61"/>
+<area shape="rect" id="node13" href="$heap_8cpp.html#af0e033b3011366bedae3722020bac21a" title="przeklada najstarszy wezel (najwieksza wartosc) na koniec wektora" alt="" coords="248,85,293,115"/>
+<area shape="rect" id="node9" href="$heap_8cpp.html#aaa3956ba23a7ef4819511e8f9726bbb9" title="funkcja oblicza indeksy galezi wezla." alt="" coords="391,32,460,61"/>
+<area shape="rect" id="node11" href="$classdane.html#a09b0fdc6cf2fa99c6c2f68d4c0030744" title="funkcja zamienia elementy o podanym indexie" alt="" coords="345,85,505,115"/>
+</map>

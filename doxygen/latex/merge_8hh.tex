@@ -1,0 +1,116 @@
+\hypertarget{merge_8hh}{\section{\-Dokumentacja pliku merge.\-hh}
+\label{merge_8hh}\index{merge.\-hh@{merge.\-hh}}
+}
+{\ttfamily \#include \char`\"{}clasa.\-hh\char`\"{}}\*
+\-Wykres zależności załączania dla merge.\-hh\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{merge_8hh__incl}
+\end{center}
+\end{figure}
+\-Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{merge_8hh__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{merge_8hh_a80562ba6e89a73c71c9c2ec3b3220355}{merge} (\hyperlink{classdane}{dane} \&zbior, int poczatek, int srodek, int koniec)
+\begin{DoxyCompactList}\small\item\em scala zbiory sortujac je \end{DoxyCompactList}\item 
+void \hyperlink{merge_8hh_a21cc64084ad14436ca30fc77c41765d3}{merge\-\_\-sort} (\hyperlink{classdane}{dane} \&zbior, int poczatek, int koniec)
+\begin{DoxyCompactList}\small\item\em dzieli wektor na mniejsze czesci \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Dokumentacja funkcji}
+\hypertarget{merge_8hh_a80562ba6e89a73c71c9c2ec3b3220355}{\index{merge.\-hh@{merge.\-hh}!merge@{merge}}
+\index{merge@{merge}!merge.hh@{merge.\-hh}}
+\subsubsection[{merge}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf merge} (
+\begin{DoxyParamCaption}
+\item[{{\bf dane} \&}]{zbior, }
+\item[{int}]{poczatek, }
+\item[{int}]{srodek, }
+\item[{int}]{koniec}
+\end{DoxyParamCaption}
+)}}\label{merge_8hh_a80562ba6e89a73c71c9c2ec3b3220355}
+
+
+scala zbiory sortujac je 
+
+
+\begin{DoxyParams}{\-Parametry}
+{\em zbior} & dane wejsciowe \\
+\hline
+{\em poczatek} & wskaznik na poczatek zbioru \\
+\hline
+{\em srodek} & wskaznik na srodek zbioru \\
+\hline
+{\em koniec} & wskaznik na koniec zbioru \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 17 pliku merge.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{merge_8hh_a80562ba6e89a73c71c9c2ec3b3220355_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{merge_8hh_a21cc64084ad14436ca30fc77c41765d3}{\index{merge.\-hh@{merge.\-hh}!merge\-\_\-sort@{merge\-\_\-sort}}
+\index{merge\-\_\-sort@{merge\-\_\-sort}!merge.hh@{merge.\-hh}}
+\subsubsection[{merge\-\_\-sort}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf merge\-\_\-sort} (
+\begin{DoxyParamCaption}
+\item[{{\bf dane} \&}]{zbior, }
+\item[{int}]{poczatek, }
+\item[{int}]{koniec}
+\end{DoxyParamCaption}
+)}}\label{merge_8hh_a21cc64084ad14436ca30fc77c41765d3}
+
+
+dzieli wektor na mniejsze czesci 
+
+poprzez rekurencyjne wywolywanie funkcji 'dzieli' vector na jednoelementowe czesci. \-Nastepnie poprzez wywyolanie funkcji \hyperlink{merge_8cpp_a80562ba6e89a73c71c9c2ec3b3220355}{merge()} scala i sortuje je. 
+\begin{DoxyParams}{\-Parametry}
+{\em zbior} & \\
+\hline
+{\em poczatek} & \\
+\hline
+{\em koniec} & \\
+\hline
+\end{DoxyParams}
+
+
+\-Definicja w linii 59 pliku merge.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{merge_8hh_a21cc64084ad14436ca30fc77c41765d3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{merge_8hh_a21cc64084ad14436ca30fc77c41765d3_icgraph}
+\end{center}
+\end{figure}
+
+

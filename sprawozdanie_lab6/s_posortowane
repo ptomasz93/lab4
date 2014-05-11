@@ -1,0 +1,10 @@
+set terminal png
+set output 'czas_posortowane.png'
+set title "czas wykonywania algorytmu quick-sort dla liczb posortowanych"
+set xlabel "il. danych [tys]"
+set ylabel "czas [s]"
+set grid
+
+plot 'pos_los' using 1 : 2 smooth bezier, 'pos_0,5' using 1 : 2 smooth bezier
+
+unset output
